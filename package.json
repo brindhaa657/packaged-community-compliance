@@ -1,0 +1,22 @@
+{
+  "name": "legalmetrix-workspace",
+  "version": "1.0.0",
+  "description": "LegalMetrix - AI-Assisted Legal Metrology Compliance Checking System for Packaged Commodities",
+  "scripts": {
+    "server:install": "npm --prefix server install",
+    "client:install": "npm --prefix client install",
+    "install:all": "npm run server:install && npm run client:install",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "keywords": [
+    "sih",
+    "legal-metrology",
+    "compliance",
+    "packaged-commodities",
+    "ai-inspection",
+    "ocr"
+  ],
+  "author": "LegalMetrix Team",
+  "license": "ISC"
+}
