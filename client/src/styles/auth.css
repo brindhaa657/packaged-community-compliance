@@ -1,0 +1,211 @@
+/* Login / Auth Portal Styles */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  background: radial-gradient(circle at 10% 20%, #0b2545 0%, #06182c 90%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 650px;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+}
+
+.auth-sidebar-hero {
+  flex: 1.1;
+  background: linear-gradient(135deg, #0b2545 0%, #134074 50%, #06182c 100%);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  color: var(--white);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auth-hero-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--gov-gold) 0%, #b45309 100%);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4);
+}
+
+.auth-hero-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.auth-hero-subtitle {
+  font-size: 0.8rem;
+  color: var(--gov-gold-border);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.auth-hero-content {
+  margin: 40px 0;
+}
+
+.auth-hero-heading {
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.auth-hero-text {
+  font-size: 0.95rem;
+  color: var(--slate-300);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.auth-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: var(--slate-200);
+}
+
+.feature-check-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.auth-hero-footer {
+  font-size: 0.78rem;
+  color: var(--slate-400);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+/* Right Form Section */
+.auth-form-wrapper {
+  flex: 1;
+  padding: 48px;
+  background: var(--white);
+  color: var(--slate-800);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-form-header {
+  margin-bottom: 28px;
+}
+
+.auth-form-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--gov-navy-900);
+}
+
+.auth-form-subtitle {
+  font-size: 0.875rem;
+  color: var(--slate-500);
+  margin-top: 4px;
+}
+
+/* Quick Demo Role Selector */
+.demo-role-selector {
+  background: var(--slate-50);
+  border: 1.5px dashed var(--slate-300);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.demo-selector-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--slate-600);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.demo-buttons-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.demo-role-btn {
+  padding: 8px 6px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--slate-300);
+  background: var(--white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--slate-700);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+}
+
+.demo-role-btn:hover {
+  border-color: var(--gov-blue-500);
+  background: var(--gov-blue-50);
+  color: var(--gov-blue-500);
+}
+
+.demo-role-btn.active {
+  border-color: var(--gov-navy-800);
+  background: var(--gov-navy-800);
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  .auth-sidebar-hero {
+    display: none;
+  }
+}
